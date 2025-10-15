@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>input</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56,76,93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+fieldset{
+    width: 25%;
+    height: 50%;
+}
+#f{
+    margin-top: 20px;
+}
+label,input,select{margin:5px 0px 0px 100px;}
+textarea{margin: 5px 0px 0px 100px ;height: 100px;}
+input[type=submit],input[type=number],select{
+    width: 165px;
+}
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Gym Membership Form</legend>
+            <form id="f">
+                        <label for="fn">Full Name</label><br>
+                        <input type="text" id="fn" name="fn" placeholder="UserName" pattern="[A-za-z@]"><br>
+                        <label for="a">age</label><br>
+                        <input type="number" id="a" name="a" min="16" max="60"><br>
+                        <label for="g">Select Gender:</label><br>
+                        <input type="radio" id="g" name="g" value="male"><span>MALE</span><br>
+                        <input type="radio" id="g" name="g" value="female"><span>Female</span><br>
+                        <label for="p">Phone number:</label><br>
+                        <input type="text" id="p" name="p" pattern="[0-9]{10}">
+                        <label>Select Time slot:</label><br>
+                        <select id="time_slot">
+                            <option>Morning</option>
+                            <option>Afternoon</option>
+                            <option>Evening</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="submit">
+                    </form>
+        </fieldset>
+    </body>
+</html>
