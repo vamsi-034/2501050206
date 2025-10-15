@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>input</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56,76,93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+fieldset{
+    width: 25%;
+    height: 60%;
+}
+#f{
+    margin-top: 20px;
+}
+label,input,select{margin:5px 0px 0px 100px;}
+input[type=submit],input[type=number],select{
+    width: 165px;
+}
+textarea{margin-left: 100px;}
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Event Volunteer Signup</legend>
+        <form id="volunteerForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[789][0-9]{9}" placeholder="Enter valid 10-digit number" required>
+
+            <label for="department">Select Department</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="registration">Registration</option>
+                <option value="logistics">Logistics</option>
+                <option value="hospitality">Hospitality</option>
+                <option value="media">Media & Promotions</option>
+                <option value="technical">Technical Support</option>
+            </select>
+
+            <label>Availability</label>
+            <div class="radio-group">
+                <input type="radio" id="morning" name="availability" value="Morning" required>
+                <label for="morning">Morning</label><br>
+
+                <input type="radio" id="evening" name="availability" value="Evening">
+                <label for="evening">Evening</label><br>
+
+                <input type="radio" id="fullday" name="availability" value="Full-day">
+                <label for="fullday">Full-day</label>
+            </div>
+
+            <label for="comments">Comments</label><br>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional details..."></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        </fieldset>
+    </body>
+</html>
