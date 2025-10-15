@@ -33,7 +33,7 @@ input[type=submit]{
                         <label for="ln">Last Name</label><br>
                         <input type="text" id="ln" name="ln"><br><br>
                         <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email"><br><br>
+                        <input type="email" id="email" name="email" required><br><br>
                         <label for="roll number">Roll number:</label><br>
                         <input type="text" id="roll number" name="roll number" pattern="C2501050[0-9]{3}"><br><br>
                         <label for="p">password:</label><br>
