@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>input</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56,76,93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+fieldset{
+    width: 25%;
+    height: 60%;
+}
+#f{
+    margin-top: 20px;
+}
+label,input,select{margin:5px 0px 0px 100px;}
+input[type=submit],input[type=number],select{
+    width: 165px;
+}
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>College Admission Form</legend>
+                        <form id="bookingForm">
+                <label for="guestName">Guest Name</label>
+                <input type="text" id="guestName" name="guestName" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" required><br>
+
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <br>
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+                <br>
+                <label for="r">Room Type</label><br>
+                <input type="radio" id="r" name="r"><span>Single</span><br>
+                <input type="radio" id="r" name="r"><span>Queen</span><br>
+                <input type="radio" id="r" name="r"><span>King</span><br>
+                <br>
+                <input type="submit" value="Submit Booking">
+            </form>
+        </fieldset>
+    </body>
+</html>
