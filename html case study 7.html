@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>input</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56,76,93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+fieldset{
+    width: 25%;
+    height: 50%;
+}
+#f{
+    margin-top: 20px;
+}
+label,input,select{margin:5px 0px 0px 100px;}
+input[type=submit],input[type=number],select{
+    width: 165px;
+}
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>College Admission Form</legend>
+            <form id="f">
+                        <label for="sn">Student Name</label><br>
+                        <input type="text" id="sn" name="sn" pattern="[A-za-z@]"><br>
+                        <label for="e">Email</label><br>
+                        <input type="email" id="e" name="e"><br>
+                        <label for="m">12th marks:</label> 
+                        <input type="number" id="m" name="m" min="50" max="100"><br>
+                        <label for="select_branch">SELECT COURSE</label>
+                        <select id="select_branch">
+                            <option>CSE</option>
+                            <option>IT</option>
+                            <option>ECE</option>
+                            <option>EEE</option>
+                            <option>CIVIL</option>
+                            <option>MECHINICAL</option>
+                        </select><br>                   
+                        <label for="f">12th Certificates:</label>
+                        <input type="file" id="f" name="f">
+                        <br>
+                        <input type="submit" value="submit">
+                    </form>
+        </fieldset>
+    </body>
+</html>
