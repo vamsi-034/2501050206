@@ -1,8 +1,8 @@
-import B from "./bro/B.jsx"
+import T from "./bro/t.jsx";
 function App() {
   return (
     <>
-      <B/>
+      <T/>
     </>
   );
 }

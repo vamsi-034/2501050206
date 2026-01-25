@@ -50,7 +50,6 @@ function B(){
         </li>
     )} 
     </ol>
-    <input type="color" onChange={bc} className="c"/>
     </div>);
 }
 export default B;
